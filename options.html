@@ -1,0 +1,45 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Summary Settings</title>
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1>AI Summary Settings</h1>
+
+        <!-- Gemini API Key field with floating label -->
+        <div class="inputGroup">
+          <input
+            type="text"
+            id="api-key"
+            name="api-key"
+            required
+          />
+          <label for="api-key">Enter your Gemini API key</label>
+        </div>
+        <small class="note">
+          Get your key at
+          <a href="https://makersuite.google.com/app/apikey" target="_blank">
+            Google AI Studio
+          </a>
+        </small>
+
+        <div class="button-wrapper">
+          <button class="btn-class-name" id="save-button">
+            <span class="back"></span>
+            <span class="front">Save</span>
+          </button>
+        </div>
+
+        <p id="success-message" class="success-message">
+          Settings saved successfully!
+        </p>
+      </div>
+    </div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Summary</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup-container">
+    <div class="status-indicator"></div>
+    <header class="popup-header">
+      <h2>AI Summary</h2>
+      <p class="subtitle">Intelligent content summarization powered by AI</p>
+    </header>
+
+    <section class="controls">
+      <label for="summary-type" class="control-label">SUMMARY TYPE</label>
+      <select id="summary-type">
+        <option value="brief">Brief Summary</option>
+        <option value="detailed">Detailed Summary</option>
+        <option value="bullets">Bullet Points</option>
+      </select>
+    </section>
+
+    <section class="actions">
+      <button id="summarize" class="btn-primary">
+        <svg class="icon-star" viewBox="0 0 24 24"><path d="M12 2 L13 9 L20 10 L14 14 L15 21 L12 17 L9 21 L10 14 L4 10 L11 9 Z"/></svg>
+        <span>Summarize</span>
+      </button>
+      <button id="copy-btn" class="btn-secondary">Copy</button>
+    </section>
+
+    <section id="result" class="result">
+      <p>Select a summary type and click “Summarize” to start.</p>
+    </section>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
