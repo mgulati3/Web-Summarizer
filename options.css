@@ -1,0 +1,156 @@
+/* options.css */
+/* Global resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;           /* Black page background */
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.container {
+  background: #090cb9;              /* Deep navy-blue for high contrast */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin-bottom: 24px;
+  color: #f5f5f5;
+  text-align: center;
+}
+
+/* From Uiverse.io by Maximinodotpy */
+.inputGroup {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 1em 0;
+  max-width: 100%;
+  position: relative;
+}
+
+.inputGroup input {
+  font-size: 1rem;
+  padding: 0.8em;
+  outline: none;
+  border: 2px solid rgb(180, 180, 200);
+  background-color: transparent;
+  border-radius: 20px;
+  width: 100%;
+  color: #f0f0f0;
+}
+
+.inputGroup label {
+  font-size: 1rem;
+  position: absolute;
+  left: 0;
+  padding: 0.8em;
+  margin-left: 0.5em;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  color: rgb(150, 150, 150);
+  background: transparent;
+}
+
+/* Float the label when input is focused or has content */
+.inputGroup :is(input:focus, input:valid) ~ label {
+  transform: translateY(-50%) scale(0.9);
+  margin: 0;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: #ffffff;
+  color: #333;
+}
+
+.inputGroup :is(input:focus, input:valid) {
+  border-color: rgb(120, 120, 200);
+}
+
+small.note {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+small.note a {
+  color: #7ea4f3;
+  text-decoration: none;
+}
+
+small.note a:hover {
+  text-decoration: underline;
+}
+
+.button-wrapper {
+  text-align: center;
+  margin: 24px 0;
+}
+
+/* From Uiverse.io by catraco */
+.btn-class-name {
+  background: transparent;  /* remove white square behind */
+  --primary: 255, 90, 120;
+  --secondary: 150, 50, 60;
+  width: 80px;
+  height: 80px;
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.btn-class-name .back {
+  background: rgb(var(--secondary));
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.btn-class-name .front {
+  background: linear-gradient(
+    0deg,
+    rgba(var(--primary), 0.7) 20%,
+    rgba(var(--primary), 1) 50%
+  );
+  box-shadow: 0 0.5em 1em -0.2em rgba(var(--secondary), 0.5);
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+  color: rgb(var(--secondary));
+  transform: translateY(-12%);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+
+.btn-class-name:active .front {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 0.9rem;
+  text-align: center;
+  display: none;
+}
