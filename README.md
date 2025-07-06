@@ -17,9 +17,6 @@ This extension injects a content script to scrape article text from web pages, t
 3. **Web Scraping**  
    The `content.js` script scrapes the main article content (from `<article>` or `<p>` tags) for summarization.
 
-4. **Modern CSS UI**  
-   The popup and options pages use custom CSS for a sleek, responsive interface.
-
 ## Installation
 
 1. Clone or download this repository.
