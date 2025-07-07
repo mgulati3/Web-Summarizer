@@ -2,9 +2,15 @@
 
 **A sleek Chrome extension to summarize web pages using the Gemini API.**
 
+## Demo Video
+
+Watch the extension in action:
+
+![Extension Demo](assets/demo.gif)
+
 ## Overview
 
-This extension injects a content script to scrape article text from web pages, then sends it to the Gemini text-generation API to produce concise summaries. It features a modern UI built with CSS, and stores the user’s API key in Chrome's **`storage.sync`**.
+This extension injects a content script to scrape article text from web pages, then sends it to the Gemini text-generation API to produce concise summaries. It  stores the user’s API key in Chrome's **`storage.sync`**.
 
 ## Key Takeaways
 
@@ -17,6 +23,7 @@ This extension injects a content script to scrape article text from web pages, t
 3. **Web Scraping**  
    The `content.js` script scrapes the main article content (from `<article>` or `<p>` tags) for summarization.
 
+   The popup and options pages use custom CSS for a sleek, responsive interface.
 ## Installation
 
 1. Clone or download this repository.
